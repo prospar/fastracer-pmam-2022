@@ -1,0 +1,7 @@
+ifdef LONG
+INTT = -DLONG
+endif
+
+PCC = clang++
+PLFLAGS = $(LFLAGS)
+PCFLAGS = $(INTT)

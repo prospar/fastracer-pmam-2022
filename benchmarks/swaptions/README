@@ -1,0 +1,3 @@
+Sim large: time ./swaptions -ns 64 -sm 40000 -nt 4
+
+native: time ./swaptions -ns 128 -sm 1000000 -nt 4

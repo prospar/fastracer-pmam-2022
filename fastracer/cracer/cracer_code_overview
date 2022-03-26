@@ -1,0 +1,61 @@
+---------------------------------------------------------------------------
+** Directory structure:
++ `cilkplusrts`: The Cilk Plus runtime, with changes for Cracer/Batcher. +
+`rdtool`: The CRacer tool itself.
++ `scripts: A set of scripts, mostly used for running the cilk5
+benchmarks.
++ They use cilkplus so "ds" and "cilk5rts" directories are not important
+and contains unfinished work.
+
+
+** Some keywords
+tl_node = top level node
+bl_node = bottom level node
+blist = bottom level link list(bottom level implemented as link list and
+not as a tree).
+estrand = english strand current memory access
+hstrand = hebrew strand of current memory access
+rip = the instruction address of this access
+
+** Command flow on a variable access:
++ On every var access by user tsan_read()/tsan_write()
+[rdtool>src>tsan.cpp/ line 454] function is called, it calls
+record_mem_helper() [src>shadow_stack.cpp/line 504], which in turn calls
+check_races_and_update()[src>mem_access.h/line 180], which calls
+check_races_and_update_with_read()/check_races_and_update_with_write()
+[src>mem_access.cpp/line 9/121], where actual race detection takes place.
+
+
+** Checks for every memory access: rdtool>src>mem_access.cpp [ ==
+Dr_Detector.cpp]
++ MemAccessList_t::check_races_and_update_with_read / line 9
++ Race check/ line 27-32
++ Update leftmost and rightmost readers/ line 35-114
++ MemAccessList_t::check_races_and_update_with_write / line 121
+
+[OM Data structure]
+** Top level structure: cracer>src>om>om.h/ line 18/ struct tl_node_s  +
+All other helper functions(like om_precedes(), om_create(), etc) for top
+level structure and order maintenence are in "om.c" file.
++ The relabel functions are separated to make the code easier to read in
+om_relabel.c" file.
+
+
+** Bottom level structure: cracer>src>om>blist.h/ line 9/ struct
+blist_node_s
++ Label generation for bottom level nodes: blist.c/ line 17/
+get_new_label()
++ All other functions for bottom level structure are in "blist.c" file.  +
+src>om>blist_split.c contains split() function to split the lower level
+linked list, when groups become heavy.
+
+
+** Relable operations:
++ src>om>om_relabel.c / om_relabel()/ line 184/ basic relabel operation. 
++ src>omrd.cpp A wrapper around OM data structure, made specifically with
+the extra features necessary for race detection.
++ join_batch() and batch_relabel() functions are in omrd.cpp file.
+
+
+** shadow_stack.cpp and tsan.cpp files handles initializations and shadow
+memory management for cilklpus constructs/calls.

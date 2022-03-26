@@ -1,0 +1,2 @@
+_Z22incrementallyAddPointsPP6vertexiS0_
+_Z8delaunayP8_point2dIdEi

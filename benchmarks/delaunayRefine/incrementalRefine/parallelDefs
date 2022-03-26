@@ -1,0 +1,3 @@
+PCC = clang++
+PLFLAGS = $(LFLAGS)
+PCFLAGS = -O0 $(INTT)

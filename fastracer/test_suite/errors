@@ -1,0 +1,197 @@
+spawn root and wait starrting140002378733376
+execbegin starting140002378733376
+exec begin ending
+execbegin starting140002378733376
+exec begin ending
+2u r in recordmem
+2u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+spawn starting140002378733376
+spawn ending
+140002378733376I am waiting for all
+execbegin starting140002378733376
+exec begin ending
+3u r in recordmem
+3u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+4u r in recordmem
+4u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+5u r in recordmem
+5u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+6u r in recordmem
+6u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+7u r in recordmem
+7u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+8u r in recordmem
+8u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+9u r in recordmem
+9u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+10u r in recordmem
+10u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+execbegin startingexec begin ending
+140002312472320
+11u r in recordmem
+11u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin startingexec begin ending
+140002378733376
+12u r in recordmem
+12exec begin ending
+u r in recordmem
+write
+exec end starting140002312472320
+exec end ending
+13u r in recordmem
+execbegin starting140002316670720
+13u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin startingexecbegin starting140002378733376140002312472320
+
+exec begin ending
+exec begin ending
+exec begin ending
+14u r in recordmem
+15u r in recordmem
+16read
+u r in recordmem
+15u r in recordmem
+write
+exec end starting14u r in recordmem140002312472320
+
+write
+exec end starting16exec end ending
+140002316670720u r in recordmem
+exec end ending
+
+write
+execbegin startingexec end starting140002378733376
+140002316670720
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+exec begin ending
+execbegin starting140002308273920
+17u r in recordmem
+17u r in recordmem
+write
+exec end starting140002316670720
+18u r in recordmemexec end ending
+execbegin starting
+140002312472320execbegin starting
+140002316670720
+18u r in recordmem
+write
+exec end starting140002378733376
+exec end ending
+execbegin starting140002378733376
+exec begin ending
+exec begin ending
+exec begin ending
+20u r in recordmem
+exec begin ending21
+u r in recordmem
+19u r in recordmem
+20u r in recordmem
+write
+22u r in recordmemexec end starting
+14000231667072021
+19u r in recordmemu r in recordmemexec end ending
+
+
+write
+write
+22exec end startingexec end starting140002308273920u r in recordmem
+140002312472320write
+
+exec end starting
+exec end ending
+140002378733376exec end ending
+
+exec end ending
+exec end starting140002378733376
+exec end ending
+spawn root and wait ending
+Addr of shd[2] 9657400
+Number of violations = 0

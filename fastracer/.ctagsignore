@@ -1,0 +1,17 @@
+PTRacer-solver
+build*
+doc
+built
+
+*.json
+*.js
+*.sh
+*.xml
+*.java
+*.html
+*.md
+*.css
+*.png
+*.rst
+*.mm
+*.m

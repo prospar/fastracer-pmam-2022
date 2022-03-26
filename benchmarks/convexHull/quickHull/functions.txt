@@ -1,0 +1,2 @@
+_ZN4Hull7executeEv
+_ZN9QuickHull7executeEv

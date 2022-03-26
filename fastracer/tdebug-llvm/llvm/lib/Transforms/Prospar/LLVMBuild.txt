@@ -1,0 +1,6 @@
+[component_0]
+type = Library
+name = Prospar
+parent = Transforms
+library_name = Prospar
+required_libraries = Analysis Core IPA InstCombine Scalar Vectorize Support Target TransformUtils IPO Instrumentation

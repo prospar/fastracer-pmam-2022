@@ -1,0 +1,31 @@
+Prerequsites
+------------
+1) CMake
+   - Download and install CMake from https://cmake.org/download/.
+   - On Ubuntu CMake can be installed using "sudo apt-get install cmake".
+
+2) Z3 theorem prover
+   - Download Z3 from the GitHub link https://github.com/Z3Prover/z3.
+   - Install Z3.
+      > cd <Z3_base_directory>
+      > python scripts/mk_make.py
+      > cd build; make
+      > export PYTHONPATH=<path_to_Z3_base_directory>/build
+
+PTRacer for TBB
+---------------
+1. Build a)Task Debug for LLVM+CLANG 3.7 b) PTRacer library c) TBB library d) PTRacer Solver
+   > source build_PTRacer.sh
+
+2. To run all test cases
+   > cd test_suite
+   > python run_tests.py -d ptracer > report_ptracer.txt
+
+SPD3 for TBB
+------------
+1. Build a)Task Debug for LLVM+CLANG 3.7 b) SPD3 library c) TBB library
+   > source build_SPD3.sh
+
+2. To run all test cases
+   > cd test_suite
+   > python run_tests.py -d spd3 > report_spd3.txt
