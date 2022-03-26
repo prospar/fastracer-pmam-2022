@@ -11,8 +11,8 @@ tbb-lib/obj
 tdebug-lib/obj
 spd3-lib/obj
 fasttrack/obj
-newfasttrack/obj
-new_algo/obj
+fasttrack-opt/obj
+fastracer/obj
 
 **/.clangd
 **/.cache
@@ -149,7 +149,7 @@ test_suite/dr_121_Yes_fixed
 test_suite/output.log
 test_suite/violations.out
 test_suite/mem-accesses
-test
+
 *taskgraph.dot
 *nohup.out
 test_suite/parallel_for
